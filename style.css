@@ -1,0 +1,130 @@
+.btn{background: none; color: white; border: none;font-size: 30px;}
+
+.opening{
+    background-image:url(mobile/image-hero.jpg);
+    width:100%; height:850px;
+    background-size:cover;
+}
+
+.loopnbar{
+    color: white;
+    display: flex;
+    justify-content:space-between; font-size:40px;
+    padding-top:50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    visibility: visible;
+}
+
+.firstbox{
+    display: block;
+    margin-left:auto; margin-right:auto;
+    border:2px solid white; color:white; 
+    margin-top:200px; width:90%;
+    font-size:xx-large; text-align:left; padding-left:10px;
+}
+
+.img{
+    display: block; margin-left:auto; margin-right:auto;
+}
+
+.svglogos{
+    display: flex; justify-content:center;padding:10px;
+}
+#interactive2{
+    display: none;
+}
+
+.blackbutton{
+    display: none;
+}
+.desktopimg{
+    display: none;
+}
+.desktopfoot{display: none;}
+.mobilefoot{display: block;}
+.loopnbar2{display: none;
+            visibility: hidden;}
+.navhov:hover{border: 2px solid white;}
+
+
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(46, 42, 42);
+    background-color: rgb(48, 43, 43);
+    overflow-y: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: red;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+
+
+
+
+@media screen and (min-width: 416px) {
+    .loopnbar{display: none;}
+    .firstbox{width: 55%;margin-left: 8%;}
+    .opening{ 
+        background-image: url(desktop/image-hero.jpg);height: 720px;}
+    #interactive{display: none;}    
+    #interactive2{display: block; 
+        height: 550px;
+        width: 55%;
+    } 
+    .blackbutton{display: block;}
+    .mobileimg{display: none;} 
+    .desktopimg{display: block;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }   
+    .lastbutton{display: none; visibility: hidden;}
+    .lopfoot{
+        float: left; margin-left:100px;
+    }   
+    .svgfoot{
+        float: right; margin-right:100px;margin-top:60px;
+    }
+    .mobilefoot{display: none;}
+    .desktopfoot{display: block;}
+    .loopnbar2{display: block;
+    visibility: visible;}
+    
+}
+  
